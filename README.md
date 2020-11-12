@@ -21,6 +21,22 @@ processing logic.
 
 <img src = "HDMIZYBOMEDIA/HDMIBreakoutFlowchart.jpg" width= "500" >
 
+# HDMIBreakout game flow 
+1. Title Screen 
+<img src = "HDMIZYBOMEDIA/HDMIZYBOImage3.JPG" width= "500" >
+2. Game in Session 
+<img src = "HDMIZYBOMEDIA/HDMIZYBOImage5.JPG" width= "500" > 
+3. Game Over (Name not entered)
+<img src = "HDMIZYBOMEDIA/HDMIZYBOImageB.JPG" width= "500" > 
+4. SDK Terminal during Game Over (Interrupt activated)
+<img src = "HDMIZYBOMEDIA/ZYBOBreakoutSS2.JPG" width= "500" > 
+5. SDK Terminal during Game Over (Name Written, exit out of handler)
+<img src = "HDMIZYBOMEDIA/ZYBOBreakoutSS3.JPG" width= "500" > 
+6. Game Over (Name entered)
+<img src = "HDMIZYBOMEDIA/HDMIZYBOImageA.JPG" width= "500" > 
+7. SDK terminal Game is reset (Reset is entered, Interrupt activated)
+<img src = "HDMIZYBOMEDIA/ZYBOBreakoutSS4.JPG" width= "500" > 
+
 # HDMIBreakout Block Design 
 
 <img src = "HDMIZYBOMEDIA/HDMIZYBOBreakoutBlockDesign.JPG" width= "500" >

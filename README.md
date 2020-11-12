@@ -45,5 +45,6 @@ The code was modified to allow the game's vga input to display the game.
 
 # HDMIBreakout PinMapping 
 <img src = "HDMIZYBOMEDIA/HDMIBreakoutSchematic.jpg" width= "500" >
+
 # HDMIBreakout Video 
 https://www.youtube.com/watch?v=NCKsvmawYa8&feature=youtu.be

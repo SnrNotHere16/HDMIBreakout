@@ -41,6 +41,7 @@ processing logic.
 
 <img src = "HDMIZYBOMEDIA/HDMIZYBOBreakoutBlockDesign.JPG" width= "500" >
 Note: Block divid_generator_0 was taken from https://numato.com/kb/hdmi-output-example-design-using-vivado-for-mimas-a7-fpga-development-board/ <br />
+The original hdmi code is provided in folder mimasA7_hdmi_out https://github.com/SnrNotHere16/HDMIBreakout/tree/main/mimasA7_hdmi_out
 The code was modified to allow the game's vga input to display the game. 
 
 # HDMIBreakout PinMapping 

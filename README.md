@@ -1,3 +1,6 @@
+# Background 
+I originally intended to have this project completed for a school project but was unable to figure out how to implement hdmi before the deadline. So I had to resort to this. 
+<img src = "HDMIZYBOMEDIA/20200509_061415.jpg" width= "500" >
 # HDMIBreakout
 A ZYNQ 7020 project that plays breakout via HDMI. The programming logic communicates with the 
 processing logic. 

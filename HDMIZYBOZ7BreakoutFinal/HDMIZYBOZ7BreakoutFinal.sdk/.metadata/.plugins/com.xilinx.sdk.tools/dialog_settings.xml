@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="HDMIZYBOZ7_wrapper_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="Auto Detect" key="HDMIZYBOZ7_wrapper_hw_platform_0-device"/>
+	<item value="" key="HDMIZYBOZ7_wrapper_hw_platform_0-offSet"/>
+	<item value="" key="HDMIZYBOZ7_wrapper_hw_platform_0-fsblFile"/>
+	<item value="false" key="HDMIZYBOZ7_wrapper_hw_platform_0-verifyFlash"/>
+	<item value="Local" key="HDMIZYBOZ7_wrapper_hw_platform_0-target"/>
+	<item value="qspi-x4-single" key="HDMIZYBOZ7_wrapper_hw_platform_0-flashType"/>
+	<item value="" key="HDMIZYBOZ7_wrapper_hw_platform_0-imgFile"/>
+	<item value="false" key="HDMIZYBOZ7_wrapper_hw_platform_0-blankCheck"/>
+</section>

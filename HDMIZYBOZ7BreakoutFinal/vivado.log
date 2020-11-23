@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov 23 09:34:53 2020
+# Process ID: 11120
+# Current directory: C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16724 C:\Users\OAkun\Desktop\PersonalProject\HDMIZYBO\HDMIZYBOZ7BreakoutFinal - Copy\HDMIZYBOZ7BreakoutFinal.xpr
+# Log file: C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal - Copy/vivado.log
+# Journal file: C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal - Copy/HDMIZYBOZ7BreakoutFinal.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 866.773 ; gain = 254.766
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 23 09:36:16 2020] Launched impl_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal - Copy/HDMIZYBOZ7BreakoutFinal.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Nov 23 09:38:44 2020] Launched synth_1...
+Run output will be captured here: C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal - Copy/HDMIZYBOZ7BreakoutFinal.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 23 09:39:49 2020...

@@ -1,0 +1,1304 @@
+
+*** Running vivado
+    with args -log HDMIZYBOZ7_BreakoutPixelGenerat_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMIZYBOZ7_BreakoutPixelGenerat_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source HDMIZYBOZ7_BreakoutPixelGenerat_0_0.tcl -notrace
+Command: synth_design -top HDMIZYBOZ7_BreakoutPixelGenerat_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'HDMIZYBOZ7_BreakoutPixelGenerat_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20104 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 865.875 ; gain = 177.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HDMIZYBOZ7_BreakoutPixelGenerat_0_0' [c:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/bd/HDMIZYBOZ7/ip/HDMIZYBOZ7_BreakoutPixelGenerat_0_0/synth/HDMIZYBOZ7_BreakoutPixelGenerat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'BreakoutPixelGenerator' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/BreakoutPixelGenerator.v:9]
+INFO: [Synth 8-6157] synthesizing module 'refr_tick' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/Breakout.sources/refr_tick.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'refr_tick' (1#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/Breakout.sources/refr_tick.v:10]
+INFO: [Synth 8-6157] synthesizing module 'breakout_animate' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/Breakout.sources/breakout_animate.v:8]
+INFO: [Synth 8-6157] synthesizing module 'color_tick' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/color_tick.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'color_tick' (2#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/color_tick.v:8]
+INFO: [Synth 8-6157] synthesizing module 'bar_animate' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/paddle_animate.v:8]
+	Parameter MIN_X bound to: 0 - type: integer 
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter BAR_Y_T bound to: 429 - type: integer 
+	Parameter BAR_Y_B bound to: 449 - type: integer 
+	Parameter BAR_X_SIZE bound to: 120 - type: integer 
+	Parameter BAR_V bound to: 15 - type: integer 
+WARNING: [Synth 8-5788] Register bar_x_reg_reg in module bar_animate is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/paddle_animate.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'bar_animate' (3#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/paddle_animate.v:8]
+INFO: [Synth 8-6157] synthesizing module 'ball_animate' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/ball_animate.v:8]
+	Parameter MIN_X bound to: 0 - type: integer 
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter BALL_SIZE bound to: 8 - type: integer 
+	Parameter BALL_V_P bound to: 4 - type: integer 
+	Parameter BALL_V_N bound to: -4 - type: integer 
+	Parameter BALL_V_P_R bound to: 3 - type: integer 
+	Parameter BALL_V_N_R bound to: -3 - type: integer 
+	Parameter BAR_Y_T bound to: 429 - type: integer 
+	Parameter BAR_Y_B bound to: 449 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ball_animate' (4#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/ball_animate.v:8]
+WARNING: [Synth 8-689] width (1) of port connection 'lives' does not match port width (3) of module 'ball_animate' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/Breakout.sources/breakout_animate.v:87]
+INFO: [Synth 8-6157] synthesizing module 'bricktest' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/bricktest.v:22]
+WARNING: [Synth 8-5788] Register brick_lives_reg in module bricktest is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/bricktest.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'bricktest' (5#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/bricktest.v:22]
+INFO: [Synth 8-6157] synthesizing module 'gameover' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:7]
+	Parameter L_SIZE bound to: 8 - type: integer 
+	Parameter L_SIZE_NAME_H bound to: 12 - type: integer 
+	Parameter L_SIZE_NAME_W bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:161]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:177]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:193]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:209]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:225]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:241]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:257]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:273]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:289]
+INFO: [Synth 8-6155] done synthesizing module 'gameover' (6#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:7]
+WARNING: [Synth 8-689] width (1) of port connection 'l_rgb' does not match port width (24) of module 'gameover' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/Breakout.sources/breakout_animate.v:683]
+INFO: [Synth 8-6157] synthesizing module 'gameoverScore' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:6]
+	Parameter N_SIZE_NAME_H bound to: 12 - type: integer 
+	Parameter N_SIZE_NAME_W bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:41]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:58]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:75]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:92]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:109]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'gameoverScore' (7#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'gamescore' does not match port width (18) of module 'gameoverScore' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/Breakout.sources/breakout_animate.v:686]
+INFO: [Synth 8-6157] synthesizing module 'gameoverName' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverName.v:17]
+	Parameter A_SIZE_NAME_H bound to: 12 - type: integer 
+	Parameter A_SIZE_NAME_W bound to: 3 - type: integer 
+	Parameter L_0_X bound to: 300 - type: integer 
+	Parameter L_0_Y bound to: 170 - type: integer 
+	Parameter L_1_X bound to: 330 - type: integer 
+	Parameter L_1_Y bound to: 170 - type: integer 
+	Parameter L_2_X bound to: 360 - type: integer 
+	Parameter L_2_Y bound to: 170 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverName.v:60]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverName.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverName.v:94]
+WARNING: [Synth 8-3848] Net alpha_mem[87] in module/entity gameoverName does not have driver. [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverName.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'gameoverName' (8#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverName.v:17]
+INFO: [Synth 8-6157] synthesizing module 'TitleScreen' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:12]
+	Parameter MIN_X bound to: 0 - type: integer 
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter BALL_SIZE bound to: 8 - type: integer 
+	Parameter BALL_V_P bound to: 4 - type: integer 
+	Parameter BALL_V_N bound to: -4 - type: integer 
+	Parameter BALL_V_P_R bound to: 3 - type: integer 
+	Parameter BALL_V_N_R bound to: -3 - type: integer 
+	Parameter BAR_Y_T bound to: 270 - type: integer 
+	Parameter BAR_Y_B bound to: 280 - type: integer 
+	Parameter BAR_X_SIZE bound to: 170 - type: integer 
+	Parameter L_SIZEX bound to: 16 - type: integer 
+	Parameter L_SIZEY bound to: 18 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:91]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:112]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:134]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:156]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:179]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:201]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:223]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:245]
+WARNING: [Synth 8-5788] Register x_delta_reg_reg in module TitleScreen is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:340]
+WARNING: [Synth 8-5788] Register y_delta_reg_reg in module TitleScreen is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:341]
+INFO: [Synth 8-6155] done synthesizing module 'TitleScreen' (9#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'breakout_animate' (10#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/Breakout.sources/breakout_animate.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'BreakoutPixelGenerator' (11#1) [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/BreakoutPixelGenerator.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'HDMIZYBOZ7_BreakoutPixelGenerat_0_0' (12#1) [c:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/bd/HDMIZYBOZ7/ip/HDMIZYBOZ7_BreakoutPixelGenerat_0_0/synth/HDMIZYBOZ7_BreakoutPixelGenerat_0_0.v:58]
+WARNING: [Synth 8-3331] design gameoverName has unconnected port clk
+WARNING: [Synth 8-3331] design gameoverName has unconnected port reset
+WARNING: [Synth 8-3331] design gameoverName has unconnected port tick75hz
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port tick75hz
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port brickstaken[4]
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port brickstaken[3]
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port brickstaken[2]
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port brickstaken[1]
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port brickstaken[0]
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port lives[2]
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port lives[1]
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port lives[0]
+WARNING: [Synth 8-3331] design gameoverScore has unconnected port gameover
+WARNING: [Synth 8-3331] design gameover has unconnected port tick75hz
+WARNING: [Synth 8-3331] design ball_animate has unconnected port notBreakout
+WARNING: [Synth 8-3331] design BreakoutPixelGenerator has unconnected port tick
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 994.637 ; gain = 306.563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 994.637 ; gain = 306.563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 994.637 ; gain = 306.563
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1115.063 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.325 . Memory (MB): peak = 1119.117 ; gain = 4.055
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1119.117 ; gain = 431.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1119.117 ; gain = 431.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1119.117 ; gain = 431.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "rom_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'a_y_reg_reg[11:0]' into 'g_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:311]
+INFO: [Synth 8-4471] merging register 'm_y_reg_reg[11:0]' into 'g_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:313]
+INFO: [Synth 8-4471] merging register 'e_y_reg_reg[11:0]' into 'g_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:315]
+INFO: [Synth 8-4471] merging register 'o_y_reg_reg[11:0]' into 'g_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:318]
+INFO: [Synth 8-4471] merging register 'v_y_reg_reg[11:0]' into 'g_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:320]
+INFO: [Synth 8-4471] merging register 'e1_y_reg_reg[11:0]' into 'g_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:322]
+INFO: [Synth 8-4471] merging register 'r_y_reg_reg[11:0]' into 'g_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:324]
+INFO: [Synth 8-4471] merging register 'n_x_reg_reg[11:0]' into 'e_x_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:326]
+INFO: [Synth 8-4471] merging register 'a1_x_reg_reg[11:0]' into 'g_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:328]
+INFO: [Synth 8-4471] merging register 'a1_y_reg_reg[11:0]' into 'n_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:329]
+INFO: [Synth 8-4471] merging register 'm1_y_reg_reg[11:0]' into 'n_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:331]
+INFO: [Synth 8-4471] merging register 'e2_x_reg_reg[11:0]' into 'o_x_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:332]
+INFO: [Synth 8-4471] merging register 'e2_y_reg_reg[11:0]' into 'n_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:333]
+INFO: [Synth 8-4471] merging register 's_x_reg_reg[11:0]' into 'e_x_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:335]
+INFO: [Synth 8-4471] merging register 'c_y_reg_reg[11:0]' into 's_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:338]
+INFO: [Synth 8-4471] merging register 'o1_y_reg_reg[11:0]' into 's_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:340]
+INFO: [Synth 8-4471] merging register 'r1_y_reg_reg[11:0]' into 's_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:342]
+INFO: [Synth 8-4471] merging register 'e3_x_reg_reg[11:0]' into 'o_x_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:343]
+INFO: [Synth 8-4471] merging register 'e3_y_reg_reg[11:0]' into 's_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:344]
+INFO: [Synth 8-4471] merging register 'o_y_reg_reg[11:0]' into 'z_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:148]
+INFO: [Synth 8-4471] merging register 't_y_reg_reg[11:0]' into 'z_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:150]
+INFO: [Synth 8-4471] merging register 'th_y_reg_reg[11:0]' into 'z_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:152]
+INFO: [Synth 8-4471] merging register 'f_y_reg_reg[11:0]' into 'z_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:154]
+INFO: [Synth 8-4471] merging register 'fi_y_reg_reg[11:0]' into 'z_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:156]
+INFO: [Synth 8-4471] merging register 'R_y_reg_reg[11:0]' into 'B_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:286]
+INFO: [Synth 8-4471] merging register 'E_y_reg_reg[11:0]' into 'B_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:289]
+INFO: [Synth 8-4471] merging register 'A_y_reg_reg[11:0]' into 'B_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:292]
+INFO: [Synth 8-4471] merging register 'K_y_reg_reg[11:0]' into 'B_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:295]
+INFO: [Synth 8-4471] merging register 'O_y_reg_reg[11:0]' into 'B_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:298]
+INFO: [Synth 8-4471] merging register 'U_y_reg_reg[11:0]' into 'B_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:301]
+INFO: [Synth 8-4471] merging register 'T_y_reg_reg[11:0]' into 'B_y_reg_reg[11:0]' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:304]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataN_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:162]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataA1_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:178]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataM1_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:194]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataE2_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:210]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataS_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:226]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataC_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:242]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataO1_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:258]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataR1_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:274]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataE3_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameover.v:290]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataO_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataT_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataTH_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:93]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataF_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:110]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataFI_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataZ_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverScore.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataP1_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverName.v:78]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataP2_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverName.v:95]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataP0_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/gameoverName.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataR_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:114]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataE_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:136]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataA_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:158]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataK_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:180]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataO_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:202]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataU_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:224]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataT_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:246]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_dataB_reg' [C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/TitleScreen.v:92]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1119.117 ; gain = 431.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |breakout_animate__GB0 |           1|     27930|
+|2     |breakout_animate__GB1 |           1|     14867|
+|3     |breakout_animate__GB2 |           1|     10935|
+|4     |refr_tick             |           1|       112|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   3 Input     14 Bit       Adders := 30    
+	   2 Input     12 Bit       Adders := 96    
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 33    
+	   3 Input      5 Bit       Adders := 8     
+	  30 Input      5 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 23    
+	   5 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 20    
+	   2 Input      2 Bit       Adders := 2     
+	   3 Input      2 Bit       Adders := 15    
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               12 Bit    Registers := 33    
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 30    
+	                3 Bit    Registers := 31    
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 7     
+	   4 Input     24 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	  19 Input     16 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 63    
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 8     
+	   3 Input      3 Bit        Muxes := 30    
+	 324 Input      3 Bit        Muxes := 36    
+	   8 Input      3 Bit        Muxes := 12    
+	  13 Input      3 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 8     
+	  13 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bar_animate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ball_animate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module bricktest__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__22 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__23 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__24 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__25 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__26 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__27 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__28 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module bricktest__29 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module TitleScreen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 11    
+	   3 Input      5 Bit       Adders := 8     
+	   3 Input      4 Bit       Adders := 8     
+	   3 Input      3 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 11    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  19 Input     16 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  19 Input      1 Bit        Muxes := 8     
+Module gameoverName 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	 324 Input      3 Bit        Muxes := 36    
+	   8 Input      3 Bit        Muxes := 12    
+	  13 Input      1 Bit        Muxes := 1     
+Module bricktest 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+Module gameoverScore 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 7     
+	   3 Input      4 Bit       Adders := 6     
+	   3 Input      2 Bit       Adders := 6     
++---Registers : 
+	               12 Bit    Registers := 7     
++---Muxes : 
+	  13 Input      1 Bit        Muxes := 6     
+Module gameover 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 18    
+	   3 Input      4 Bit       Adders := 9     
+	   3 Input      3 Bit       Adders := 16    
+	   3 Input      2 Bit       Adders := 9     
++---Registers : 
+	               12 Bit    Registers := 15    
++---Muxes : 
+	   8 Input      5 Bit        Muxes := 8     
+	  13 Input      3 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 9     
+Module color_tick 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module breakout_animate 
+Detailed RTL Component Info : 
++---Adders : 
+	  30 Input      5 Bit       Adders := 1     
+	   5 Input      4 Bit       Adders := 4     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 6     
+	   4 Input     24 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP brickscore, operation Mode is: A*(B:0x64).
+DSP Report: operator brickscore is absorbed into DSP brickscore.
+DSP Report: Generating DSP gamescore0, operation Mode is: PCIN+(A:0x0):B+(C:0x6f).
+DSP Report: operator gamescore0 is absorbed into DSP gamescore0.
+WARNING: [Synth 8-3331] design HDMIZYBOZ7_BreakoutPixelGenerat_0_0 has unconnected port tick
+INFO: [Synth 8-3886] merging instance 'onei_0/R0_0/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R5_4/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R5_3/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R5_2/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R5_1/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R5_0/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R4_4/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R4_3/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R4_2/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R4_1/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R4_0/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R3_4/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R3_3/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R3_2/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R3_1/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R3_0/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R2_4/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R2_3/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R2_2/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R2_1/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R1_4/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R1_3/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R1_2/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R1_1/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R1_0/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R0_4/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R0_3/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3886] merging instance 'onei_0/R0_2/direction_reg[0]' (FDC) to 'onei_0/R0_1/direction_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_0/\R0_1/direction_reg[0] )
+INFO: [Synth 8-3886] merging instance 'onei_0/one/x_delta_reg_reg[4]' (FDCE) to 'onei_0/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'onei_0/one/x_delta_reg_reg[5]' (FDCE) to 'onei_0/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'onei_0/one/x_delta_reg_reg[6]' (FDCE) to 'onei_0/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'onei_0/one/x_delta_reg_reg[7]' (FDCE) to 'onei_0/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'onei_0/one/x_delta_reg_reg[8]' (FDCE) to 'onei_0/one/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'onei_0/one/y_delta_reg_reg[4]' (FDCE) to 'onei_0/one/y_delta_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'onei_0/one/y_delta_reg_reg[5]' (FDCE) to 'onei_0/one/y_delta_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'onei_0/one/y_delta_reg_reg[6]' (FDCE) to 'onei_0/one/y_delta_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'onei_0/one/y_delta_reg_reg[7]' (FDCE) to 'onei_0/one/y_delta_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'onei_0/one/y_delta_reg_reg[8]' (FDCE) to 'onei_0/one/y_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/y_delta_reg_reg[3]' (FDE) to 'onei_1/thirteen/y_delta_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/y_delta_reg_reg[4]' (FDE) to 'onei_1/thirteen/y_delta_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/y_delta_reg_reg[5]' (FDE) to 'onei_1/thirteen/y_delta_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/y_delta_reg_reg[6]' (FDE) to 'onei_1/thirteen/y_delta_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/y_delta_reg_reg[7]' (FDE) to 'onei_1/thirteen/y_delta_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/y_delta_reg_reg[8]' (FDE) to 'onei_1/thirteen/y_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/y_delta_reg_reg[9]' (FDE) to 'onei_1/thirteen/y_delta_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/y_delta_reg_reg[10]' (FDE) to 'onei_1/thirteen/y_delta_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/x_delta_reg_reg[3]' (FDE) to 'onei_1/thirteen/x_delta_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/x_delta_reg_reg[4]' (FDE) to 'onei_1/thirteen/x_delta_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/x_delta_reg_reg[5]' (FDE) to 'onei_1/thirteen/x_delta_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/x_delta_reg_reg[6]' (FDE) to 'onei_1/thirteen/x_delta_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/x_delta_reg_reg[7]' (FDE) to 'onei_1/thirteen/x_delta_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/x_delta_reg_reg[8]' (FDE) to 'onei_1/thirteen/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/x_delta_reg_reg[9]' (FDE) to 'onei_1/thirteen/x_delta_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/x_delta_reg_reg[10]' (FDE) to 'onei_1/thirteen/x_delta_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/y_delta_reg_reg[0]' (FDE) to 'onei_1/thirteen/y_delta_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/\thirteen/y_delta_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_1/\thirteen/y_delta_reg_reg[2] )
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/x_delta_reg_reg[0]' (FDE) to 'onei_1/thirteen/x_delta_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/\thirteen/x_delta_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_1/\thirteen/x_delta_reg_reg[2] )
+INFO: [Synth 8-3886] merging instance 'onei_1/R2_0/direction_reg[0]' (FDC) to 'onei_1/thirteen/B_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataB_reg[0]' (LD) to 'onei_1/thirteen/rom_dataB_reg[1]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataB_reg[2]' (LD) to 'onei_1/thirteen/rom_dataB_reg[3]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataB_reg[3]' (LD) to 'onei_1/thirteen/rom_dataB_reg[4]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataB_reg[4]' (LD) to 'onei_1/thirteen/rom_dataB_reg[5]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataB_reg[5]' (LD) to 'onei_1/thirteen/rom_dataB_reg[6]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataB_reg[6]' (LD) to 'onei_1/thirteen/rom_dataB_reg[7]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataB_reg[7]' (LD) to 'onei_1/thirteen/rom_dataB_reg[8]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataB_reg[13]' (LD) to 'onei_1/thirteen/rom_dataB_reg[14]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataB_reg[14]' (LD) to 'onei_1/thirteen/rom_dataB_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/\thirteen/rom_dataB_reg[15] )
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[0]' (FDC) to 'onei_1/thirteen/B_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[1]' (FDP) to 'onei_1/thirteen/B_x_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[2]' (FDP) to 'onei_1/thirteen/B_x_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[3]' (FDC) to 'onei_1/thirteen/B_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[4]' (FDC) to 'onei_1/thirteen/B_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[5]' (FDP) to 'onei_1/thirteen/B_x_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[6]' (FDP) to 'onei_1/thirteen/B_x_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[7]' (FDP) to 'onei_1/thirteen/U_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[8]' (FDC) to 'onei_1/thirteen/B_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[9]' (FDC) to 'onei_1/thirteen/B_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[10]' (FDC) to 'onei_1/thirteen/B_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/B_x_reg_reg[11]' (FDC) to 'onei_1/thirteen/U_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataT_reg[0]' (LD) to 'onei_1/thirteen/rom_dataT_reg[12]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataT_reg[1]' (LD) to 'onei_1/thirteen/rom_dataT_reg[2]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataT_reg[2]' (LD) to 'onei_1/thirteen/rom_dataT_reg[10]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataT_reg[3]' (LD) to 'onei_1/thirteen/rom_dataT_reg[4]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataT_reg[4]' (LD) to 'onei_1/thirteen/rom_dataT_reg[8]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataT_reg[6]' (LD) to 'onei_1/thirteen/rom_dataT_reg[7]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataT_reg[8]' (LD) to 'onei_1/thirteen/rom_dataT_reg[9]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataT_reg[10]' (LD) to 'onei_1/thirteen/rom_dataT_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataT_reg[14]' (LD) to 'onei_1/thirteen/rom_dataT_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/\thirteen/rom_dataT_reg[15] )
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[0]' (FDC) to 'onei_1/thirteen/U_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[1]' (FDC) to 'onei_1/thirteen/T_x_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[2]' (FDC) to 'onei_1/thirteen/T_x_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[3]' (FDC) to 'onei_1/thirteen/T_x_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[4]' (FDC) to 'onei_1/thirteen/T_x_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[5]' (FDC) to 'onei_1/thirteen/T_x_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[8]' (FDP) to 'onei_1/thirteen/U_x_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[9]' (FDC) to 'onei_1/thirteen/U_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[10]' (FDC) to 'onei_1/thirteen/U_x_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/T_x_reg_reg[11]' (FDC) to 'onei_1/thirteen/U_x_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/\thirteen/rom_dataU_reg[0] )
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataU_reg[2]' (LD) to 'onei_1/thirteen/rom_dataU_reg[15]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataU_reg[5]' (LD) to 'onei_1/thirteen/rom_dataU_reg[13]'
+INFO: [Synth 8-3886] merging instance 'onei_1/thirteen/rom_dataU_reg[7]' (LD) to 'onei_1/thirteen/rom_dataU_reg[8]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/\thirteen/rom_dataE_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/\thirteen/rom_dataR_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_1/\thirteen/R_x_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/\thirteen/R_x_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/ten/\rom_dataE3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/ten/\rom_dataR1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/ten/\rom_dataO1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/ten/\rom_dataC_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/ten/\rom_dataE2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/ten/\rom_dataM1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/ten/\rom_dataA1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/ten/\rom_dataN_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_2/ten/\a_x_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/ten/\a_x_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (onei_2/eleven/\o_x_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_2/eleven/\o_x_reg_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (rom_dataN_reg[0]) is unused and will be removed from module gameover.
+WARNING: [Synth 8-3332] Sequential element (rom_dataA1_reg[2]) is unused and will be removed from module gameover.
+WARNING: [Synth 8-3332] Sequential element (rom_dataM1_reg[2]) is unused and will be removed from module gameover.
+WARNING: [Synth 8-3332] Sequential element (rom_dataE2_reg[0]) is unused and will be removed from module gameover.
+WARNING: [Synth 8-3332] Sequential element (rom_dataC_reg[0]) is unused and will be removed from module gameover.
+WARNING: [Synth 8-3332] Sequential element (rom_dataO1_reg[2]) is unused and will be removed from module gameover.
+WARNING: [Synth 8-3332] Sequential element (rom_dataR1_reg[0]) is unused and will be removed from module gameover.
+WARNING: [Synth 8-3332] Sequential element (rom_dataE3_reg[0]) is unused and will be removed from module gameover.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/i_0/\thirteen/ball_y_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (onei_1/i_1/\thirteen/ball_x_reg_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:46 . Memory (MB): peak = 1121.840 ; gain = 433.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------+------------+---------------+----------------+
+|Module Name   | RTL Object | Depth x Width | Implemented As | 
++--------------+------------+---------------+----------------+
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|TitleScreen   | rom_dataR  | 32x10         | LUT            | 
+|TitleScreen   | rom_dataA  | 32x15         | LUT            | 
+|TitleScreen   | rom_dataK  | 32x15         | LUT            | 
+|TitleScreen   | rom_dataO  | 32x7          | LUT            | 
+|TitleScreen   | rom_dataR  | 32x10         | LUT            | 
+|TitleScreen   | rom_dataA  | 32x15         | LUT            | 
+|TitleScreen   | rom_dataK  | 32x15         | LUT            | 
+|TitleScreen   | rom_dataO  | 32x7          | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
+|gameoverScore | num_mem    | 128x3         | LUT            | 
++--------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------------------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                         | DSP Mapping             | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|breakout_animate                    | A*(B:0x64)              | 15     | 7      | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|HDMIZYBOZ7_BreakoutPixelGenerat_0_0 | PCIN+(A:0x0):B+(C:0x6f) | 30     | 8      | 7      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------------------------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |breakout_animate__GB0 |           1|      2382|
+|2     |breakout_animate__GB1 |           1|      5794|
+|3     |breakout_animate__GB2 |           1|      3255|
+|4     |refr_tick             |           1|        48|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:54 ; elapsed = 00:02:00 . Memory (MB): peak = 1125.297 ; gain = 437.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:02:00 . Memory (MB): peak = 1125.297 ; gain = 437.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |breakout_animate__GB0 |           1|      2382|
+|2     |breakout_animate__GB1 |           1|      5794|
+|3     |breakout_animate__GB2 |           1|      3255|
+|4     |refr_tick             |           1|        48|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:02:02 . Memory (MB): peak = 1225.086 ; gain = 537.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1230.633 ; gain = 542.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1230.633 ; gain = 542.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1230.633 ; gain = 542.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1230.633 ; gain = 542.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1230.633 ; gain = 542.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1230.633 ; gain = 542.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   303|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |LUT1      |   106|
+|5     |LUT2      |   950|
+|6     |LUT3      |   401|
+|7     |LUT4      |   582|
+|8     |LUT5      |   351|
+|9     |LUT6      |   860|
+|10    |MUXF7     |   136|
+|11    |MUXF8     |     8|
+|12    |FDCE      |   346|
+|13    |FDPE      |    67|
+|14    |FDRE      |    12|
+|15    |LD        |   101|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------+-----------------------+------+
+|      |Instance       |Module                 |Cells |
++------+---------------+-----------------------+------+
+|1     |top            |                       |  4225|
+|2     |  inst         |BreakoutPixelGenerator |  3338|
+|3     |    one        |breakout_animate       |  3306|
+|4     |      R0_0     |bricktest              |    27|
+|5     |      R0_1     |bricktest_0            |    25|
+|6     |      R0_2     |bricktest_1            |    26|
+|7     |      R0_3     |bricktest_2            |    20|
+|8     |      R0_4     |bricktest_3            |    27|
+|9     |      R1_0     |bricktest_4            |    27|
+|10    |      R1_1     |bricktest_5            |    23|
+|11    |      R1_2     |bricktest_6            |    23|
+|12    |      R1_3     |bricktest_7            |    21|
+|13    |      R1_4     |bricktest_8            |    23|
+|14    |      R2_0     |bricktest_9            |    41|
+|15    |      R2_1     |bricktest_10           |    26|
+|16    |      R2_2     |bricktest_11           |    20|
+|17    |      R2_3     |bricktest_12           |    20|
+|18    |      R2_4     |bricktest_13           |    38|
+|19    |      R3_0     |bricktest_14           |    24|
+|20    |      R3_1     |bricktest_15           |    21|
+|21    |      R3_2     |bricktest_16           |    24|
+|22    |      R3_3     |bricktest_17           |    28|
+|23    |      R3_4     |bricktest_18           |    20|
+|24    |      R4_0     |bricktest_19           |    28|
+|25    |      R4_1     |bricktest_20           |    21|
+|26    |      R4_2     |bricktest_21           |    25|
+|27    |      R4_3     |bricktest_22           |    21|
+|28    |      R4_4     |bricktest_23           |    31|
+|29    |      R5_0     |bricktest_24           |    27|
+|30    |      R5_1     |bricktest_25           |    23|
+|31    |      R5_2     |bricktest_26           |    23|
+|32    |      R5_3     |bricktest_27           |    25|
+|33    |      R5_4     |bricktest_28           |    22|
+|34    |      alpha    |color_tick             |    65|
+|35    |      eleven   |gameoverScore          |   563|
+|36    |      one      |ball_animate           |   533|
+|37    |      ten      |gameover               |    43|
+|38    |      thirteen |TitleScreen            |   388|
+|39    |      twelve   |gameoverName           |   534|
+|40    |      zero     |bar_animate            |    92|
+|41    |    zero       |refr_tick              |    32|
++------+---------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:58 ; elapsed = 00:02:05 . Memory (MB): peak = 1230.633 ; gain = 542.559
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:45 ; elapsed = 00:02:00 . Memory (MB): peak = 1230.633 ; gain = 418.078
+Synthesis Optimization Complete : Time (s): cpu = 00:01:59 ; elapsed = 00:02:05 . Memory (MB): peak = 1230.633 ; gain = 542.559
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 550 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1230.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 101 instances were transformed.
+  LD => LDCE: 101 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+220 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:06 ; elapsed = 00:02:16 . Memory (MB): peak = 1230.633 ; gain = 811.711
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1230.633 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_BreakoutPixelGenerat_0_0_synth_1/HDMIZYBOZ7_BreakoutPixelGenerat_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 40 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1230.633 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OAkun/Desktop/PersonalProject/HDMIZYBO/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_BreakoutPixelGenerat_0_0_synth_1/HDMIZYBOZ7_BreakoutPixelGenerat_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HDMIZYBOZ7_BreakoutPixelGenerat_0_0_utilization_synth.rpt -pb HDMIZYBOZ7_BreakoutPixelGenerat_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 11 12:41:56 2020...

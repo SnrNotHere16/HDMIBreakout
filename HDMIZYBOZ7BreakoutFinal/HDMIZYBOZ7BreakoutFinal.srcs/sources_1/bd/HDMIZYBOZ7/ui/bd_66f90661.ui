@@ -1,0 +1,67 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2010 -y 50 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2010 -y 80 -defaultsOSRD
+preplace port clk_in -pg 1 -lvl 0 -x -10 -y 820 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -10 -y 610 -defaultsOSRD
+preplace port clk_p -pg 1 -lvl 7 -x 2010 -y 660 -defaultsOSRD
+preplace port clk_n -pg 1 -lvl 7 -x 2010 -y 690 -defaultsOSRD
+preplace port gameover -pg 1 -lvl 7 -x 2010 -y 720 -defaultsOSRD
+preplace port status -pg 1 -lvl 7 -x 2010 -y 900 -defaultsOSRD
+preplace port btn1 -pg 1 -lvl 0 -x -10 -y 850 -defaultsOSRD
+preplace portBus data_p -pg 1 -lvl 7 -x 2010 -y 600 -defaultsOSRD
+preplace portBus data_n -pg 1 -lvl 7 -x 2010 -y 630 -defaultsOSRD
+preplace portBus brickstaken -pg 1 -lvl 7 -x 2010 -y 930 -defaultsOSRD
+preplace portBus LR -pg 1 -lvl 0 -x -10 -y 880 -defaultsOSRD
+preplace portBus speed -pg 1 -lvl 0 -x -10 -y 980 -defaultsOSRD
+preplace inst dvid_generator_0 -pg 1 -lvl 5 -x 1440 -y 610 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 4 -x 1160 -y 570 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 110 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 900 -y 230 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 3 -x 900 -y 530 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 580 -y 350 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 220 -y 720 -defaultsOSRD
+preplace inst axi_gpio_2 -pg 1 -lvl 3 -x 900 -y 390 -defaultsOSRD
+preplace inst BreakoutPixelGenerat_0 -pg 1 -lvl 6 -x 1800 -y 900 -defaultsOSRD
+preplace netloc dvid_generator_0_pix_x 1 5 1 1620 540n
+preplace netloc dvid_generator_0_pix_y 1 5 1 1580 560n
+preplace netloc dvid_generator_0_h_video 1 5 1 1610 580n
+preplace netloc dvid_generator_0_v_video 1 5 1 1570 600n
+preplace netloc BreakoutPixelGenerat_0_rgb_next 1 4 3 1300 740 NJ 740 1960
+preplace netloc clk_wiz_0_clk_vga 1 4 2 1260 820 NJ
+preplace netloc clk_wiz_0_clk_dvi 1 4 1 1270 560n
+preplace netloc clk_wiz_0_clk_dvin 1 4 1 1250 580n
+preplace netloc clk_in_1 1 0 6 10J 620 NJ 620 NJ 620 1050 660 1280 800 NJ
+preplace netloc dvid_generator_0_data_p 1 5 2 1590J 600 NJ
+preplace netloc dvid_generator_0_data_n 1 5 2 1630J 630 NJ
+preplace netloc dvid_generator_0_clk_p 1 5 2 NJ 660 NJ
+preplace netloc dvid_generator_0_clk_n 1 5 2 NJ 680 1980J
+preplace netloc BreakoutPixelGenerat_0_status 1 6 1 1970J 900n
+preplace netloc BreakoutPixelGenerat_0_brickstaken 1 6 1 NJ 930
+preplace netloc btn1_1 1 0 6 NJ 850 NJ 850 NJ 850 NJ 850 NJ 850 1590J
+preplace netloc LR_1 1 0 6 NJ 880 NJ 880 NJ 880 NJ 880 NJ 880 NJ
+preplace netloc speed_1 1 0 6 NJ 980 NJ 980 NJ 980 NJ 980 NJ 980 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 230 420 190 740
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 240 410
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 440 510 720
+preplace netloc reset_1 1 0 6 NJ 610 NJ 610 NJ 610 1040 670 1290 840 NJ
+preplace netloc BreakoutPixelGenerat_0_gameover 1 3 4 NJ 230 NJ 230 NJ 230 1970
+preplace netloc axi_gpio_0_ip2intc_irpt 1 0 4 30 220 430J 150 NJ 150 1040
+preplace netloc axi_gpio_2_gpio_io_o 1 3 3 NJ 400 NJ 400 1600
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 N 370
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 730 210n
+preplace netloc processing_system7_0_FIXED_IO 1 1 6 NJ 80 NJ 80 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440 120n
+preplace netloc processing_system7_0_DDR 1 1 6 440J 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 730 350n
+levelinfo -pg 1 -10 220 580 900 1160 1440 1800 2010
+pagesize -pg 1 -db -bbox -sgen -130 0 2160 1060
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_board_cnt":"2",
+   "da_ps7_cnt":"2"
+}

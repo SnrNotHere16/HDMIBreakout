@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov  7 17:34:55 2020
+# Process ID: 15680
+# Current directory: C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_axi_gpio_0_0_synth_1
+# Command line: vivado.exe -log HDMIZYBOZ7_axi_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMIZYBOZ7_axi_gpio_0_0.tcl
+# Log file: C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_axi_gpio_0_0_synth_1/HDMIZYBOZ7_axi_gpio_0_0.vds
+# Journal file: C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_axi_gpio_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDMIZYBOZ7_axi_gpio_0_0.tcl -notrace

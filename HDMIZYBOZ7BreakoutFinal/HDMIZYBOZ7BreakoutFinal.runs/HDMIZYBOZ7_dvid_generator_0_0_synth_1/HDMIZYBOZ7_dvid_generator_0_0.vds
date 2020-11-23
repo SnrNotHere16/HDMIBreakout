@@ -1,0 +1,423 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov  7 17:37:20 2020
+# Process ID: 9012
+# Current directory: C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_dvid_generator_0_0_synth_1
+# Command line: vivado.exe -log HDMIZYBOZ7_dvid_generator_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMIZYBOZ7_dvid_generator_0_0.tcl
+# Log file: C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_dvid_generator_0_0_synth_1/HDMIZYBOZ7_dvid_generator_0_0.vds
+# Journal file: C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_dvid_generator_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDMIZYBOZ7_dvid_generator_0_0.tcl -notrace
+Command: synth_design -top HDMIZYBOZ7_dvid_generator_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'HDMIZYBOZ7_dvid_generator_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12196 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 865.848 ; gain = 176.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HDMIZYBOZ7_dvid_generator_0_0' [c:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/bd/HDMIZYBOZ7/ip/HDMIZYBOZ7_dvid_generator_0_0/synth/HDMIZYBOZ7_dvid_generator_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'dvid_generator' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvidGenerator.vhd:34]
+INFO: [Synth 8-3491] module 'dvid' declared at 'C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:15' bound to instance 'Inst_dvid' of component 'dvid' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvidGenerator.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'dvid' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:31]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/New folder/TMDS_encoder.vhd:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/New folder/TMDS_encoder.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'TDMS_encoder' (1#1) [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/New folder/TMDS_encoder.vhd:22]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/New folder/TMDS_encoder.vhd:14' bound to instance 'TDMS_encoder_green' of component 'TDMS_encoder' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:57]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/New folder/TMDS_encoder.vhd:14' bound to instance 'TDMS_encoder_blue' of component 'TDMS_encoder' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:58]
+	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR2_red' to cell 'ODDR2' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:60]
+	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR2_green' to cell 'ODDR2' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:63]
+	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR2_blue' to cell 'ODDR2' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:66]
+	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR2_clock' to cell 'ODDR2' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'dvid' (2#1) [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvid.vhd:31]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_blue' to cell 'OBUFDS' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvidGenerator.vhd:126]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvidGenerator.vhd:127]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvidGenerator.vhd:128]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvidGenerator.vhd:129]
+	Parameter hRez bound to: 640 - type: integer 
+	Parameter hStartSync bound to: 656 - type: integer 
+	Parameter hEndSync bound to: 752 - type: integer 
+	Parameter hMaxCount bound to: 800 - type: integer 
+	Parameter hsyncActive bound to: 1'b0 
+	Parameter vRez bound to: 480 - type: integer 
+	Parameter vStartSync bound to: 490 - type: integer 
+	Parameter vEndSync bound to: 492 - type: integer 
+	Parameter vMaxCount bound to: 525 - type: integer 
+	Parameter vsyncActive bound to: 1'b1 
+INFO: [Synth 8-3491] module 'vga' declared at 'C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/vga.vhd:10' bound to instance 'Inst_vga' of component 'vga' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvidGenerator.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/vga.vhd:42]
+	Parameter hRez bound to: 640 - type: integer 
+	Parameter hStartSync bound to: 656 - type: integer 
+	Parameter hEndSync bound to: 752 - type: integer 
+	Parameter hMaxCount bound to: 800 - type: integer 
+	Parameter hsyncActive bound to: 1'b0 
+	Parameter vRez bound to: 480 - type: integer 
+	Parameter vStartSync bound to: 490 - type: integer 
+	Parameter vEndSync bound to: 492 - type: integer 
+	Parameter vMaxCount bound to: 525 - type: integer 
+	Parameter vsyncActive bound to: 1'b1 
+	Parameter re bound to: 1 - type: integer 
+	Parameter bl bound to: 2 - type: integer 
+	Parameter gr bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'grgb' is read in the process but is not in the sensitivity list [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/vga.vhd:75]
+INFO: [Synth 8-4471] merging register 'r_reg[v_v]' into 'r_reg[h_v]' [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/vga.vhd:136]
+WARNING: [Synth 8-6014] Unused sequential element r_reg[v_v] was removed.  [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/vga.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'vga' (3#1) [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/vga.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'dvid_generator' (4#1) [C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/imports/new/dvidGenerator.vhd:34]
+INFO: [Synth 8-6155] done synthesizing module 'HDMIZYBOZ7_dvid_generator_0_0' (5#1) [c:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.srcs/sources_1/bd/HDMIZYBOZ7/ip/HDMIZYBOZ7_dvid_generator_0_0/synth/HDMIZYBOZ7_dvid_generator_0_0.v:58]
+WARNING: [Synth 8-3331] design dvid_generator has unconnected port clk_in
+WARNING: [Synth 8-3331] design dvid_generator has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 933.145 ; gain = 243.840
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 933.145 ; gain = 243.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 933.145 ; gain = 243.840
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'inst/Inst_dvid/ODDR2_red' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'inst/Inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'inst/Inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'inst/Inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1045.723 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 4 instances
+  ODDR2 => ODDR: 4 instances
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 1046.766 ; gain = 1.043
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1046.766 ; gain = 357.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1046.766 ; gain = 357.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1046.766 ; gain = 357.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1046.766 ; gain = 357.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input      4 Bit       Adders := 3     
+	   9 Input      4 Bit       Adders := 3     
+	  11 Input      4 Bit       Adders := 3     
+	   4 Input      4 Bit       Adders := 3     
+	   3 Input      4 Bit       Adders := 3     
+	  10 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               10 Bit    Registers := 10    
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 6     
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 9     
+	   2 Input      9 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TDMS_encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input      4 Bit       Adders := 1     
+	   9 Input      4 Bit       Adders := 1     
+	  11 Input      4 Bit       Adders := 1     
+	   4 Input      4 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	  10 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+Module dvid 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 7     
+Module vga 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design HDMIZYBOZ7_dvid_generator_0_0 has unconnected port clk_in
+WARNING: [Synth 8-3331] design HDMIZYBOZ7_dvid_generator_0_0 has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1046.766 ; gain = 357.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1046.766 ; gain = 357.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1046.766 ; gain = 357.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1046.766 ; gain = 357.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1060.988 ; gain = 371.684
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1060.988 ; gain = 371.684
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1060.988 ; gain = 371.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1060.988 ; gain = 371.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1060.988 ; gain = 371.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1060.988 ; gain = 371.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    15|
+|2     |LUT1   |     7|
+|3     |LUT2   |    62|
+|4     |LUT3   |    53|
+|5     |LUT4   |    26|
+|6     |LUT5   |    68|
+|7     |LUT6   |   105|
+|8     |MUXF7  |     2|
+|9     |MUXF8  |     1|
+|10    |ODDR2  |     4|
+|11    |FDRE   |   159|
+|12    |FDSE   |     5|
+|13    |OBUFDS |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------+---------------+------+
+|      |Instance                 |Module         |Cells |
++------+-------------------------+---------------+------+
+|1     |top                      |               |   511|
+|2     |  inst                   |dvid_generator |   511|
+|3     |    Inst_dvid            |dvid           |   157|
+|4     |      TDMS_encoder_blue  |TDMS_encoder   |    19|
+|5     |      TDMS_encoder_green |TDMS_encoder_0 |    19|
+|6     |      TDMS_encoder_red   |TDMS_encoder_1 |    19|
+|7     |    Inst_vga             |vga            |   350|
++------+-------------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1060.988 ; gain = 371.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:03 . Memory (MB): peak = 1060.988 ; gain = 258.063
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1060.988 ; gain = 371.684
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'inst/Inst_dvid/ODDR2_red' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_dvin' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'inst/Inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_dvin' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'inst/Inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_dvin' that is connected to this pin will not be connected to the replacement instance.
+WARNING: [Netlist 29-151] Pin 'C1' on instance 'inst/Inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_dvin' that is connected to this pin will not be connected to the replacement instance.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1074.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 4 instances
+  ODDR2 => ODDR: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:28 . Memory (MB): peak = 1074.359 ; gain = 654.375
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1074.359 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_dvid_generator_0_0_synth_1/HDMIZYBOZ7_dvid_generator_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1074.359 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/OAkun/Desktop/PersonalProject/New folder/HDMIZYBOZ7BreakoutFinal/HDMIZYBOZ7BreakoutFinal.runs/HDMIZYBOZ7_dvid_generator_0_0_synth_1/HDMIZYBOZ7_dvid_generator_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HDMIZYBOZ7_dvid_generator_0_0_utilization_synth.rpt -pb HDMIZYBOZ7_dvid_generator_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  7 17:39:09 2020...

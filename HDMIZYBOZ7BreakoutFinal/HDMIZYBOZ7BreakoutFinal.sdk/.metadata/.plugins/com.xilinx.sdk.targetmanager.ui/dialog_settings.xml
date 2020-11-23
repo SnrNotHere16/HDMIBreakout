@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Auto Detect" key="HDMIZYBOZ7_wrapper_hw_platform_0-device"/>
+	<item value="HDMIZYBOZ7_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="false" key="HDMIZYBOZ7_wrapper_hw_platform_0-partial_bit"/>
+	<item value="Local" key="HDMIZYBOZ7_wrapper_hw_platform_0-target"/>
+	<item value="HDMIZYBOZ7_wrapper.bit" key="HDMIZYBOZ7_wrapper_hw_platform_0-bitFile"/>
+	<item value="" key="HDMIZYBOZ7_wrapper_hw_platform_0-bmmFile"/>
+</section>

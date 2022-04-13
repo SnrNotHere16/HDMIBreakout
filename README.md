@@ -50,7 +50,7 @@ The original hdmi code is provided in folder mimasA7_hdmi_out https://github.com
 The code was modified to allow the game's vga input to display the game. 
 
 # HDMIBreakout PinMapping 
-<img src = "HDMIZYBOMEDIA/HDMIBreakoutSchematic.jpg" width= "500" >
+<img src = "HDMIZYBOMEDIA/HDMIBreakoutSchematic.jpg" width= "800" >
 
 # HDMIBreakout Video 
 https://www.youtube.com/watch?v=NCKsvmawYa8&feature=youtu.be
